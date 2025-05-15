@@ -1,17 +1,28 @@
 body {
-    font-family: sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6; /* Apply line-height to the body for overall readability */
+    background-color: #f8f9fa; /* Updated background color */
+    color: #343a40; /* Updated primary text color */
+    line-height: 1.6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 30px;
+}
+
+header,
+section,
+footer {
+    background-color: #ffffff; /* Updated secondary background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header {
-    background-color: #fff;
-    padding: 20px 0;
     text-align: center;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #ddd;
+    margin-bottom: 0;
+    border-bottom: 1px solid #adb5bd; /* Updated subtle border color */
 }
 
 header h1 {
@@ -20,20 +31,16 @@ header h1 {
 }
 
 header p {
-    color: #666;
+    color: #6c757d; /* A slightly lighter gray for the subtitle */
     font-style: italic;
 }
 
 section {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px; /* Slightly rounded corners for sections */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 0;
 }
 
 section h2 {
-    color: #333;
+    color: #343a40; /* Updated section heading color */
     border-bottom: 2px solid #007bff;
     padding-bottom: 10px;
     margin-bottom: 15px;
@@ -49,17 +56,10 @@ section h2 {
 }
 
 #skills li {
-    background-color: #e9ecef; /* Light background for skill pills */
-    color: #333;
+    background-color: #e9ecef;
+    color: #343a40; /* Updated skill text color */
     padding: 8px 15px;
-    border-radius: 20px; /* Pill shape */
-}
-
-.project-item {
-    margin-bottom: 15px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .project-item h3 {
@@ -70,15 +70,16 @@ section h2 {
 
 .project-item a {
     color: #007bff;
-    text-decoration: none; /* Remove underlines from links */
+    text-decoration: none;
 }
 
 .project-item a:hover {
-    text-decoration: underline; /* Add underline on hover for better interaction */
+    text-decoration: underline;
 }
 
 #contact p {
     margin-bottom: 10px;
+    color: #343a40; /* Updated contact text color */
 }
 
 #contact a {
@@ -93,8 +94,41 @@ section h2 {
 footer {
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
-    background-color: #333;
-    color: #fff;
-    border-top: 1px solid #555;
+    margin-top: 0;
+    background-color: #343a40; /* Updated footer background color */
+    color: #ffffff; /* Updated footer text color */
+    border-top: 1px solid #495057; /* A slightly lighter dark gray for the border */
+}
+
+@media (max-width: 767px) {
+    body {
+        margin: 10px; /* Reduce margin on smaller screens */
+        gap: 20px; /* Reduce gap between sections */
+    }
+
+    header {
+        padding: 15px 0; /* Reduce header padding */
+        margin-bottom: 20px; /* Add some bottom margin again for spacing */
+    }
+
+    section {
+        padding: 15px; /* Reduce section padding */
+        margin-bottom: 15px; /* Add some bottom margin again for spacing */
+    }
+
+    #skills ul {
+        justify-content: flex-start; /* Align skills to the left on smaller screens */
+    }
+}
+
+/* Media query for even smaller screens (typical for mobile phones) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em; /* Slightly smaller heading on mobile */
+    }
+
+    #skills li {
+        padding: 6px 10px; /* Further reduce padding on skill pills */
+        font-size: 0.9em; /* Slightly smaller font for skills */
+    }
 }
