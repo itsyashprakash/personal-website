@@ -1,0 +1,100 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6; /* Apply line-height to the body for overall readability */
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #666;
+    font-style: italic;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Slightly rounded corners for sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#skills ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    display: flex; /* Arrange skills in a row */
+    gap: 15px; /* Space between skill items */
+    justify-content: center; /* Center the list items */
+    flex-wrap: wrap; /* Allow skills to wrap to the next line on smaller screens */
+}
+
+#skills li {
+    background-color: #e9ecef; /* Light background for skill pills */
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 20px; /* Pill shape */
+}
+
+.project-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project-item h3 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.project-item a {
+    color: #007bff;
+    text-decoration: none; /* Remove underlines from links */
+}
+
+.project-item a:hover {
+    text-decoration: underline; /* Add underline on hover for better interaction */
+}
+
+#contact p {
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    border-top: 1px solid #555;
+}
